@@ -1,0 +1,10 @@
+<div class="container">
+  <table>
+    <tr *ngFor="let i of range; even as evr">
+      <td
+        *ngFor="let j of range; even as evd"
+        [ngClass]="{'alive': evr === evd}"
+      ></td>
+    </tr>
+  </table>
+</div>
